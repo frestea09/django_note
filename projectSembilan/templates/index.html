@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Belajar Django || {{ section }}
+        </title>
+    </head>
+    <body>
+
+        {{ judul }}
+        <p>{{ article }}</p>
+        <form name="formPercobaan" method="post">
+           {% csrf_token %}
+            <tr>
+                <td>Name: </td>
+                <td><input  id="nameMahasiswa" name="nameMahasiswa" type="text"></td>
+            </tr>
+            <tr>
+                <input type="submit" value="save">
+            </tr>
+        </form>
+        <ul>
+            {% for link,name in nav %}
+                <li><a href="{{ link }}">{{ name }}</a> </li>
+            {% endfor %}
+        </ul>
+        <p>Hasil Post</p>
+        <p>{{ nameMahasiswa }}</p>
+    </body>
+</html>

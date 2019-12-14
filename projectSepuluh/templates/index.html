@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Belajar Django">
+        <meta name="keywords" content="HTML,CSS,Javascripts">
+        <meta name="author" content="ilman teguh prasetya">
+        <title>
+            Belajar Django
+        </title>
+    </head>
+    <body>
+        <h3>{{ judul }}</h3>
+        <p>{{ article }}</p>
+        <img style="width: 50%;" src="{% static '/img/gambar.jpg' %}">
+        <ul>
+            {% for link,nav in menu %}
+                <li><a href="{{ link }}">{{ nav }}</a></li>
+            {%  endfor %}
+        </ul>
+        <form id='isiKaka' name="isiKaka" method="post" action="{% url 'kirim' %}">
+            {% csrf_token %}
+            <table>
+                <tr>
+                    <td>
+                        Name:
+                    </td>
+                    <td>
+                        <input id="post" name="post" type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="kirim">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <input type="text" name="jawaban" value="{{ post }}" readonly>
+    </body>
+</html>
