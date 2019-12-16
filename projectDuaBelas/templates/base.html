@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Belajar Django">
+        <meta name="keywords" content="HTML,CSS,Javascripts">
+        <meta name="author" content="ilman teguh prasetya">
+        <title>
+            Belajar Django
+        </title>
+        {% include 'snippets/styles.html' %}
+    </head>
+    <body>
+        {% include 'snippets/navbar.html' %}
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+            <h1 class="display-4" id="judulWeb">Selamat Datang</h1>
+            <p class="lead" id="dekripsiJudulWeb">Selamat Datang dilatihan website ilman teguh prasetya.</p>
+          </div>
+        </div>
+        {% include 'snippets/styles.html' %}
+       </body>
+</html>

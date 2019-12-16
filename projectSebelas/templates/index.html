@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="in">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="ilman teguh prasetya">
+        <meta name="description" content="Belajar Django">
+        <meta name="keywords" content="HTML,CSS,Javascripts">
+        <title>
+            Belajar Django | {{ section }}
+        </title>d
+        <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+    </head>
+    <body>
+        <img id="banner" src="{% static 'img/banner.jpg' %}">
+        <h3>{{ judul }}</h3>
+        <p>{{ article }}</p>
+        <form name="formMahasiswa" method="post" action="{% url 'post' %}">
+            {% csrf_token %}
+            <table>
+                <tr>
+                    <td>Nim : </td>
+                    <td><input name="nimMahasiswa" type="text"></td>
+                </tr>
+                <tr>
+                    <td>Nama : </td>
+                    <td>
+                        <input name="nameMahasiswa" type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input name="buttonSave" type="submit" value="Save">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <ul>
+            {% for link,name in nav %}
+                <li><a href="{{ link }}">{{ name }}</a> </li>
+            {% endfor  %}
+        </ul>
+
+        <p>Hasil : </p>
+        <p>{{ nimMahasiswa }}</p>
+        <p>{{ nameMahasiswa }}</p>
+        <p>{{ gagal }}</p>
+    </body>
+</html>
