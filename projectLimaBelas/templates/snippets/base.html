@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% include 'snippets/meta.html' %}
+        <title>
+            Belajar Django | {{ titleWeb }}
+        </title>
+        {% include 'snippets/styles.html' %}
+    </head>
+    <body>
+        {% include 'snippets/navbar.html' %}
+
+        {% include 'snippets/jumbotron.html' %}
+
+        {% block content %}
+
+        {% endblock %}
+
+        {% include 'snippets/scritps.html' %}
+    </body>
+</html>

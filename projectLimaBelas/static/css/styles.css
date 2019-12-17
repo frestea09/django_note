@@ -1,0 +1,14 @@
+.jumbotron{
+    background-image: url('../img/banner.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.jumbotron h1{
+    color: antiquewhite;
+}
+.jumbotron p{
+    color: ghostwhite;
+}
+.navbar-brand img{
+    height: 30px;
+}

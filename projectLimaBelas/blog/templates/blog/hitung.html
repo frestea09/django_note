@@ -1,0 +1,32 @@
+{% extends 'snippets/base.html' %}
+
+{% block content %}
+    <h3>{{ judulArticle }}</h3>
+    <p>{{ article }}</p>
+   <form name="formMahasisaw" method="post">
+        {% csrf_token %}
+       <table>
+        <tr>
+            <td>
+                Nama :
+            </td>
+            <td>
+                <input name="namaMahasiswa" type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Nilai :
+            </td>
+            <td>
+                <input name="nilaiMahasiswa" type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="submit" class="btn btn-success">Save</button>
+            </td>
+        </tr>
+    </table>
+   </form>
+{% endblock %}
