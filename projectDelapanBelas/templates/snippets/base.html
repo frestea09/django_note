@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="belajar django">
+        <meta name="author" content="ilman teguh prasetya">
+        <meta name="keywords" content="HTML,CSS,Javascript">
+        <title>
+            Belajar Django
+        </title>
+        {% include 'snippets/styles.html' %}
+    </head>
+    <body>
+        <div id="container" class="container-fluid bg-secondary">
+           <div id="header">
+                {% include 'snippets/nav.html' %}
+                <div id="jumbro" class="jumbotron jumbotron-fluid">
+                  <div class="container text-center text-white-50">
+                      {% block jumbo %}
+                        <h1 class="display-4">Home</h1>
+                        <p class="lead">Selamat Datang di Home.</p>
+                          <form action="/blog">
+                            <button class="btn btn-secondary">Start</button>
+                          </form>
+                      {% endblock %}
+                  </div>
+                 </div>
+                </div>
+             {% block main %}
+
+             {% endblock %}
+            {% include 'snippets/footer.html' %}
+        </div>
+        {% include 'snippets/styles.html'%}
+      </body>
+</html>

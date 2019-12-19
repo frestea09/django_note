@@ -1,0 +1,21 @@
+{% extends 'index.html' %}
+{% block content %}
+    <h3>Blog</h3>
+    <p>Selamat datang di Blog</p>
+    <table>
+        <tr>
+            <th>Judul</th>
+            <th>Deskripsi</th>
+        </tr>
+        {% for item in data %}
+            <tr>
+                <td>{{ item.judul }}</td>
+                <td>{{ item.post }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    <ul>
+        <li><a href="/blog/">Ilman</a> </li>
+        <li><a href="/blog/">Faris</a> </li>
+    </ul>
+{% endblock %}

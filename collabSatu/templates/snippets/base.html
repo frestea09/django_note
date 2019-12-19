@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% include 'snippets/metta.html' %}
+        <title>
+            Belajar Django | {{ sectionWeb }}
+        </title>
+        {% include 'snippets/styles.html' %}
+    </head>
+    <body class="bg-dark">
+        <div id="container" class="container-fluid">
+            <div id="header" class="container-fluid">
+                {% include 'snippets/navbar.html' %}
+                <div id="jumbo">
+                    <div id="jumboDalem" class="jumbotron jumbotron-fluid text-white-50 text-lg-center">
+                      <div class="container">
+                        <h1 class="display-4">{{ sectionWeb }}</h1>
+                        <p class="lead">{{ sectionWebArticle }}</p>
+                          {% block bottomBegin %}
+                          {% endblock %}
+                      </div>
+                    </div>
+                </div>
+            </div>
+            {% block content %}
+            {% endblock %}
+            {% include 'snippets/footer.html' %}
+        </div>
+        {% include 'snippets/scripts.html' %}
+    </body>
+</html>

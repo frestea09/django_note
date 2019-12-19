@@ -1,0 +1,13 @@
+{% load static %}
+
+<div id="jumbro" class="jumbotron jumbotron-fluid">
+  <div class="container text-center text-white-50">
+      {% block jumbo %}
+        <h1 class="display-4">Home</h1>
+        <p class="lead">Selamat Datang di Home.</p>
+          <form action="/blog">
+            <button class="btn btn-secondary">Start</button>
+          </form>
+      {% endblock %}
+  </div>
+</div>

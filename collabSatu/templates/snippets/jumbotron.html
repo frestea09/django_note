@@ -1,0 +1,11 @@
+{% load static %}
+<div id="jumbo">
+    <div id="jumboDalem" class="jumbotron jumbotron-fluid text-white-50 text-lg-center">
+      <div class="container">
+        <h1 class="display-4">{{ sectionWeb }}</h1>
+        <p class="lead">{{ sectionWebArticle }}</p>
+          {% block bottomBegin %}
+          {% endblock %}
+      </div>
+    </div>
+</div>

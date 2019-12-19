@@ -1,0 +1,25 @@
+{% extends 'snippets/base.html' %}
+{% block jumbo %}
+    <h1 class="display-4">{{ judul }}</h1>
+    <p class="lead">{{ article }}</p>
+{% endblock %}
+{% block main %}
+    <div id="content" class="container-fluid shadow-lg">
+            <div id="main">
+                <h3>{{ judul }}</h3>
+                <p>{{ article }}</p>
+                <p>Data Kami : </p>
+                {% for item in data %}
+                    <div class="card" style="width: 18rem;">
+                      <div class="card-body">
+                        <h5 class="card-title">{{ item.judul }}</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">{{ item.date }}</h6>
+                        <p class="card-text">{{ item.post }}</p>
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                      </div>
+                    </div>
+                {% endfor %}
+            </div>
+    </div>
+{% endblock %}

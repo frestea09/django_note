@@ -1,0 +1,37 @@
+{% extends 'snippets/base.html' %}
+{% block content %}
+    <div id="content" class="container-fluid bg-white shadow-lg">
+        <div id="main" class="container-fluid">
+            <h3>{{ titleArticle }}</h3>
+            <p>{{ article }}</p>
+
+            <table border="1">
+                <tr>
+                    <th>Penulis</th>
+                    <th>Date</th>
+                    <th>Article</th>
+                </tr>
+                {% for item in data %}
+                    <tr>
+                        <td>
+                            {{ item.author }}
+                        </td>
+                        <td>
+                            {{ item.publish }}
+                        </td>
+                        <td>
+                            {{ item.article }}
+                        </td>
+                    </tr>
+                {% endfor %}
+            </table>
+        </div>
+        <div id="menuSamping" class="container-fluid">
+            <nav class="nav navbar-dark bg-dark justify-content-center">
+                {% for link,name in sideMenu %}
+                  <a class="nav-item nav-link btn-outline-light" href="{{ link }}">{{ name }}</a>
+                {% endfor %}
+            </nav>
+        </div>
+    </div>
+{% endblock %}

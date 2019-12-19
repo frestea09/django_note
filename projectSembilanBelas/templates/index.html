@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Belajar
+        </title>
+    </head>
+    <body>
+        <h3>{{ judul }}</h3>
+        <p>{{ article }}</p>
+        <ul>
+            {% for link,nav in menu %}
+                <li><a href="{{ link }}">{{ nav }}</a> </li>
+            {% endfor %}
+        </ul>
+
+        <ul>
+            {% for link,nav in menuBlog %}
+                <li><a href="{{ link }}">{{ nav }}</a> </li>
+            {% endfor %}
+        </ul>
+        <p><a href="/blog/ilman">ilman</a> </p>
+    </body>
+</html>

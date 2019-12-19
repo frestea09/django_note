@@ -1,0 +1,28 @@
+#imgBrand{
+    width: 20px;
+}
+#jumboDalem{
+    background-image: url("/static/img/banner_dua.jpg");
+    background-position: center;
+    background-size: cover;
+}
+#content{
+    margin-top: -50px;
+    width: 1000px;
+    height: 700px;
+    padding: 5px;
+}
+#main{
+    width: 800px;
+    float: left;
+}
+#menuSamping{
+    width: 100px;
+    float: right;
+}
+#menuSamping .nav a{
+    text-decoration: none;
+}
+#footer{
+    clear: both;
+}
