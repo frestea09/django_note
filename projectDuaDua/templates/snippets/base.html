@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% include 'snippets/meta.html' %}
+        <title>
+            Belajad Django | {{ sectionWeb }}
+        </title>
+        {% include 'snippets/styles.html' %}
+    <body>
+        <div class="container-fluid">
+            <div id="header" class="container-fluid">
+                {% include 'snippets/navbar.html' %}
+                {% block jumbotron %}
+                {% endblock %}
+
+            </div>
+            <div id="content" class="container-fluid shadow-lg bg-secondary">
+                <div id="main">
+                    {% block isiWeb %}
+                    {% endblock %}
+                </div>
+                <div id="menuSlide">
+                    <ul class="nav flex-column">
+                        {% block menuSamping %}
+                        {% endblock %}
+                    </ul>
+                </div>
+            </div>
+            <div id="footer" class="container-fluid">
+                <p class="text-center text-secondary">Copyright &copy; ilman</p>
+            </div>
+        </div>
+        {% include 'snippets/scripts.html' %}
+    </body>
+</html>

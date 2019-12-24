@@ -18,8 +18,8 @@ from django.urls import path,re_path,include
 from . import view
 urlpatterns = [
     path('admin/', admin.site.urls),
-    re_path(r'^$',view.index),
-    re_path(r'^blog/',include('blog.urls')),
+    re_path(r'^$',view.index,name='index'),
+    re_path(r'^blog/',include('blog.urls',namespace='blog')),
     # re_path(r'^(?P<tahun>[0-9]{4})/(?P<bulan>[0-9]{2})/(?P<tanggal>[0-9]{2})',view.angka),
     # re_path(r'^(?P<page>[\w]+)/$',view.page)
 ]

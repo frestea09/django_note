@@ -2,33 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b08328de-2f52-4ef1-8941-57be62ea1e0f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../projectDelapanBelas/static/bootstrap/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projectDelapanBelas/static/bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projectDelapanBelas/static/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projectDelapanBelas/static/bootstrap/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projectDelapanBelas/static/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projectDelapanBelas/static/bootstrap/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projectDelapanBelas/static/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projectDelapanBelas/static/bootstrap/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projectDelapanBelas/static/bootstrap/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projectDelapanBelas/static/bootstrap/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projectDelapanBelas/static/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projectDelapanBelas/static/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projectDelapanBelas/static/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projectDelapanBelas/static/bootstrap/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projectDelapanBelas/static/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projectDelapanBelas/static/bootstrap/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projectDelapanBelas/static/bootstrap/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projectDelapanBelas/static/bootstrap/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projectDelapanBelas/static/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projectDelapanBelas/static/bootstrap/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projectDelapanBelas/static/bootstrap/js/jquery-3.4.1.slim.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projectDelapanBelas/static/bootstrap/js/popper.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projectDelapanBelas/static/img/banner.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projectDelapanBelas/static/img/polos.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projectDuaPuluh/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projectDuaPuluh/projectDuaPuluh/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../projectLimaBelas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../projectLimaBelas/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projectDuaDua/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projectDuaDua/projectDuaDua/static/vendor/bootstrap/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projectDuaDua/projectDuaDua/static/vendor/bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projectDuaDua/projectDuaDua/static/vendor/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projectDuaDua/projectDuaDua/static/vendor/bootstrap/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projectDuaDua/projectDuaDua/static/vendor/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projectDuaDua/projectDuaDua/static/vendor/bootstrap/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projectDuaDua/projectDuaDua/static/vendor/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projectDuaDua/projectDuaDua/static/vendor/bootstrap/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projectDuaDua/projectDuaDua/static/vendor/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projectDuaDua/projectDuaDua/static/vendor/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projectDuaDua/projectDuaDua/static/vendor/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projectDuaDua/projectDuaDua/static/vendor/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projectDuaDua/projectDuaDua/static/vendor/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projectDuaDua/projectDuaDua/static/vendor/bootstrap/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projectDuaDua/projectDuaDua/static/vendor/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projectDuaDua/projectDuaDua/static/vendor/bootstrap/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projectDuaDua/projectDuaDua/static/vendor/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projectDuaDua/projectDuaDua/static/vendor/bootstrap/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projectDuaDua/projectDuaDua/static/vendor/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projectDuaDua/projectDuaDua/static/vendor/bootstrap/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projectDuaDua/projectDuaDua/static/vendor/bootstrap/js/jquery-3.4.1.slim.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projectDuaDua/projectDuaDua/static/vendor/bootstrap/js/popper.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asset/img/banner.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../projectDuaDua/projectDuaDua/static/img/banner.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asset/img/banner_dua.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../projectDuaDua/projectDuaDua/static/img/banner_dua.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asset/img/polos.png" beforeDir="false" afterPath="$PROJECT_DIR$/../projectDuaDua/projectDuaDua/static/img/polos.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projectDuaSatu/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../projectDuaSatu/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../projectTujuhBelas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../projectTujuhBelas/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,10 +41,10 @@
     <session id="-1479913305">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
-          <entry key="project.open.time.0" value="1" />
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -141,8 +141,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="950" />
-    <option name="width" value="980" />
+    <option name="x" value="495" />
+    <option name="y" value="470" />
+    <option name="width" value="1410" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -151,6 +152,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -177,7 +179,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -239,8 +240,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12483221" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1261745" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />

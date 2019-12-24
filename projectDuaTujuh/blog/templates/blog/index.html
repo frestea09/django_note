@@ -1,0 +1,33 @@
+{% extends 'snippets/base.html' %}
+{% block content %}
+     <ul class="nav">
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'blog:index' %}">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'blog:create' %}">Tambah</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" >Delete</a>
+        </li>
+    </ul>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Judul</th>
+                <th>Article</th>
+                <th>Author</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for element in data %}
+                <tr>
+                    <td>{{ element.judul }}</td>
+                    <td>{{ element.article }}</td>
+                    <td>{{ element.author }}</td>
+                    <td><a href="{% url 'blog:delete' inputId=element.id%}">Delete</a></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

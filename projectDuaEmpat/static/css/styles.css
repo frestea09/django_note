@@ -1,0 +1,22 @@
+#gambarBrand{
+    width: 20px;
+}
+body{
+    background-color: #343a40;
+}
+#content{
+    overflow: auto;
+    padding: 5px;
+}
+.jumbotron{
+    background-image: url("/static/img/banner.jpg");
+    background-size: cover;
+    background-position: center;
+}
+#content{
+    margin-top:-50px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 900px;
+    height: 700px;
+}

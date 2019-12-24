@@ -1,0 +1,22 @@
+{% extends 'snippets/base.html' %}
+{% block formSaya %}
+    {{ title }}
+    <form method="POST">
+            {% csrf_token %}
+            <table>
+                <tr>
+                    <td>
+                        Name :
+                    </td>
+                    <td>
+                        <input type="text" name="nameMahasiswa">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="save">
+                    </td>
+                </tr>
+            </table>
+        </form>
+{% endblock formSaya %}

@@ -1,0 +1,26 @@
+{% extends 'snippets/base.html' %}
+{% block content %}
+    <ul class="nav">
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'blog:index' %}">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'blog:create' %}">Tambah</a>
+        </li>
+    </ul>
+    <form method="POST" action="{% url 'blog:create' %}">
+        {% csrf_token %}
+        <table>
+            {% for element in formBlog %}
+                <div class="form-group">
+                    {{ element.label}}
+                    {{ element}}
+                </div>
+            {% endfor %}
+        </table>
+        <br>
+        <button type="submit">
+            Save
+        </button>
+    </form>
+{% endblock %}

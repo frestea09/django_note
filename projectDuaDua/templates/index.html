@@ -1,0 +1,15 @@
+{% extends 'snippets/base.html' %}
+{% block jumbotron %}
+        <div id="jumb">
+        <div id="jumbSection" class="jumbotron jumbotron-fluid text-lg-center text-white-50">
+          <div class="container">
+            <h1 class="display-4">{{ sectionWeb }}</h1>
+            <p class="lead">{{ sectionWebDesc }}</p>
+          </div>
+        </div>
+    </div>
+{% endblock %}
+{% block isiWeb %}
+    <h3>{{ sectionWeb }}</h3>
+    <p>{{ sectionWebDescDetail }}</p>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends 'snippets/base.html' %}
+{% block content %}
+    <h3>{{ section }}</h3>
+    <p>{{ article }}</p>
+    <nav class="nav">
+        <a class="nav-link" href="{% url 'blog:index' %}">Home</a>
+        <a class="nav-link" href="{% url 'blog:formTambah' %}">Tambah</a>
+    </nav>
+    <form method="POST" action="{% url 'blog:create' %}">
+        {% csrf_token %}
+        <table>
+            {% for element in form %}
+                <div class="form-group">
+                    {{ element.label }}
+                    {{ element }}
+                </div>
+            {% endfor %}
+        </table>
+        <button class="btn btn-success" type="submit">Save</button>
+    </form>
+{% endblock %}

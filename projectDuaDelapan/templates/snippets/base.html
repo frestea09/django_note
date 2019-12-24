@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% include 'snippets/meta.html' %}
+        <title>
+            Belajar Django
+        </title>
+        {% include 'snippets/styles.html' %}
+    </head>
+    <body>
+            <div id="header" class="container container-fluid">
+                {% include 'snippets/navbar.html' %}
+                {% include 'snippets/jumbotron.html' %}
+            </div>
+            <div id="content" class="container container-fluid">
+                <div id="main" class="container container-fluid">
+                    {% block content %}
+                    {% endblock %}
+                </div>
+                <div id="menuSamping" class="container-fluid">
+                    {% block menuSamping %}
+                    {% endblock %}
+                </div>
+            </div>
+            <div id="footer" class="container-fluid text-center text-dark">
+                <p>Copyright &copy;2019 ilman</p>
+            </div>
+        {% include 'snippets/scripts.html' %}
+    </body>
+</html>

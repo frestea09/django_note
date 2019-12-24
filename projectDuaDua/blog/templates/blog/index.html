@@ -1,0 +1,30 @@
+{% extends 'snippets/base.html' %}
+{% block jumbotron %}
+        <div id="jumb">
+        <div id="jumbSection" class="jumbotron jumbotron-fluid text-lg-center text-white-50">
+          <div class="container">
+            <h1 class="display-4">{{ sectionWeb }}</h1>
+            <p class="lead">{{ sectionWebDesc }}</p>
+          </div>
+        </div>
+    </div>
+{% endblock %}
+{% block isiWeb %}
+    <h3>{{ sectionWeb }}</h3>
+    <p>{{ sectionWebDescDetail }}</p>
+    {% for item in data %}
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">{{ item.judul }}</h3>
+                <h4 class="card-subtitle">{{ item.author }}</h4>
+                <p class="card-text">{{ item.article }}</p>
+                <a href="/blog/post/{{ item.slug }}" class="btn btn-primary">Read More</a>
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}
+{% block menuSamping %}
+    {% for link,name in nav %}
+        <li class="nav-item"><a class="btn btn-outline-info" href="{{ link }}">{{ name }}</a></li>
+    {% endfor %}
+{% endblock %}

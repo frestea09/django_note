@@ -1,0 +1,33 @@
+{% extends 'snippets/base.html' %}
+{% block formSaya %}
+    {{ title }}
+    <form method="POST">
+        {% csrf_token %}
+        <div class="form-group">
+            {{ form.nama.label_tag }}
+            {{ form.nama }}
+        </div>
+        <div class="form-group">
+            {{ form.hobby.label_tag }}
+            {% for data in form.hobby %}
+
+                <div class="form-check">
+                    {{ data.tag }}
+{#                    <label for="{{ data.id_for_label }}" class="form-check-label">#}
+                    {{ data.choice_label }}
+{#                    </label>#}
+                </div>
+            {% endfor %}
+        </div>
+        <div class="form-group">
+            {{ form.tanggal_lahir.label_tag }}
+            <div class="form-row">
+                {{ form.tanggal_lahir }}
+            </div>
+        </div>
+        <br>
+        <button class="btn btn-primary" type="submit">Save</button>
+    </form>
+    <p>{{ nama }}</p>
+    <p>{{ hobby }}</p>
+{% endblock formSaya %}

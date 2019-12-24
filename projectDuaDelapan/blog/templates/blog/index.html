@@ -1,0 +1,34 @@
+{% extends 'snippets/base.html' %}
+{% block content %}
+    <h3>{{ section }}</h3>
+    <p>{{ article }}</p>
+    <nav class="nav">
+        <a class="nav-link" href="{% url 'blog:formTambah' %}">Tambah</a>
+    </nav>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Judul</th>
+                <th>Author</th>
+                <th>Article</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in data %}
+                <tr>
+                    <td><a href="{% url 'blog:update' var=item.id %}">{{ item.judul }}</a></td>
+                    <td>{{ item.author }}</td>
+                    <td>{{ item.article }}</td>
+                    <td>
+                        <form method="POST" action="{% url 'blog:delete' var=item.id %}">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                <button class="btn btn-danger" type="submit">Delete</button>
+                            </div>
+                        </form>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

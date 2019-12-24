@@ -1,0 +1,23 @@
+#navBrand{
+    width: 20px;
+}
+#jumbSection{
+    background-image: url("/static/img/banner.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+}
+#content{
+    width: 950px;
+    height: 750px;
+    margin-top: -50px;
+}
+#main{
+    float: left;
+}
+#menuSlide{
+    float: right;
+}
+#footer{
+    clear: both;
+}
