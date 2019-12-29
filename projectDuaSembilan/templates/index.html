@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Belajar Class View
+        </title>
+    </head>
+    <body>
+        <h3>Hello World</h3>
+        <form method="POST">
+            {% csrf_token %}
+            <table>
+                <tr>
+                    <td>Name : </td>
+                    <td>
+                        <input name="name" type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="submit">Save</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        {{ data }}
+    </body>
+</html>

@@ -1,0 +1,11 @@
+body{
+    background-color: black;
+}
+#jumbo{
+    background-image: url("/static/img/banner_dua.jpg");
+    background-position: center;
+    background-size: cover;
+}
+#imageBrand{
+    width: 30px;
+}
