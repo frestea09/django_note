@@ -1,0 +1,23 @@
+{% extends 'snippets/base.html' %}
+{% block content %}
+    <h3>{{ title }}</h3>
+    <p>{{ article }}</p>
+    <a href="{% url 'blog:formPost' %}">Tambah</a>
+    <table>
+        <thead>
+            <tr>
+                <td>Author</td>
+                <td>Article</td>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in data %}
+                <tr>
+                    <td>{{ item.author }}</td>
+                    <td><a href="{% url 'blog:update' inputId=item.id %}">{{ item.title }}</a> </td>
+                    <td><a href="{% url 'blog:delete' deleteId=item.id %}">Delete</a> </td>
+                </tr>
+            {% endfor  %}
+        </tbody>
+    </table>
+{% endblock %}

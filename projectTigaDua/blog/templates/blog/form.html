@@ -1,0 +1,12 @@
+{% extends 'snippets/base.html' %}
+{% block content %}
+    <h3>{{ title }}</h3>
+    <form method="POST" action="{% url 'blog:createForm' %}">
+        {% csrf_token %}
+        <table>
+            {{ form.as_table }}
+        </table>
+        <br/>
+        <button type="submit">Save</button>
+    </form>
+{% endblock %}

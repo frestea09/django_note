@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="ilman teguh prasteya">
+        <meta name="keywords">
+        <title>
+            Belajar Django
+        </title>
+    </head>
+    <body>
+        <ul>
+            <li><a href="{% url 'index' %}">Home</a> </li>
+            <li><a href="{% url 'blog:index' %}">Blog</a> </li>
+        </ul>
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>

@@ -1,0 +1,44 @@
+{% extends 'snippets/base.html' %}
+{% block content %}
+    <h3>{{ title }}</h3>
+    <p>{{ article }}</p>
+    <p><a href="{% url 'blog:form' %}">Tambah</a></p>
+    <table border="1">
+            <tr>
+                <th>Penulis</th>
+                <th>Judul</th>
+            </tr>
+        {% for item in postBlog %}
+            <tr>
+                <td>{{ item.author }}</td>
+                <td><a href="{% url 'blog:update' inputId=item.id %}">{{ item.title }}</a></td>
+                <td><a href="{% url 'blog:delete' inputId=item.id %}">Delete</a></td>
+            </tr>
+        {% endfor %}
+    </table>
+    {% if postBlog.has_other_pages %}
+      <ul class="pagination">
+
+        {% if postBlog.has_previous %}
+          <li><a href="?page={{ postBlog.previous_page_number }}">«</a></li>
+        {% else %}
+          <li class="disabled"><span>«</span></li>
+        {% endif %}
+
+        {% for i in postBlog.paginator.page_range %}
+          {% if postBlog.number == i %}
+            <li class="active"><span>{{ i }} <span class="sr-only">(current)</span></span></li>
+          {% else %}
+            <li><a href="?page={{ i }}">{{ i }}</a></li>
+          {% endif %}
+        {% endfor %}
+
+        {% if postBlog.has_next %}
+          <li><a href="?page={{ postBlog.next_page_number }}">»</a></li>
+        {% else %}
+          <li class="disabled"><span>»</span></li>
+        {% endif %}
+
+      </ul>
+    {% endif %}
+{% endblock %}

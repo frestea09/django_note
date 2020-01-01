@@ -1,0 +1,27 @@
+{% extends 'snippets/base.html' %}
+{% block content %}
+    <h3>{{ title }}</h3>
+    <p>{{ article }}</p>
+    <p><a href="{% url 'blog:createForm' %}">Tambah</a></p>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Author</th>
+                <th>Rating</th>
+                <th>Article</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in dataBlog %}
+                <tr>
+                    <td>{{ item.author }}</td>
+                    <td>{{ item.rating }}</td>
+                    <td><a href="#">{{ item.article }}</a> </td>
+                    <td>
+{#                        <a href="{% url 'blog:delete' deleteId=item.id%}">Delete</a>#}
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

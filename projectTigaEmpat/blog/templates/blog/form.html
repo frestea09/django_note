@@ -1,0 +1,12 @@
+{% load static %}
+{% block content %}
+    {{ title }}
+    <form method="POST" action="{% url 'blog:savePost' %}">
+        {% csrf_token %}
+        <table>
+            {{ form.as_table }}
+        </table>
+        <br/>
+        <button type="submit">Save</button>
+    </form>
+{% endblock %}
